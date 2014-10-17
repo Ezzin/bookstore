@@ -1,0 +1,8 @@
+{% extends "main.html" %}
+{% block title %}
+        {% if title in dir() %}
+        {{ title }}
+        {% else %}
+        {{ "yxc" }}
+        {% end %}
+{% end %}

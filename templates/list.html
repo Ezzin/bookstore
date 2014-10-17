@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+    {% block title %}
+            {{ title = "YXC" }}
+    {% end %}
+
+    {% block body %}
+            <p>this is {{ book_name }}</p>
+        <form action="/list" method="post">
+            <input type="text" name="bookname">
+            <input type="submit" value="确定">
+        </form>
+    {% end %}
