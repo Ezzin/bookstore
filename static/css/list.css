@@ -1,0 +1,16 @@
+body{
+	background-color: red;
+}
+.listform {
+	text-align: center;
+}
+
+
+table {
+	text-align: center;
+	margin: auto;
+}
+
+table tbody tr th{
+	text-align: right;
+}
