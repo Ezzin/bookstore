@@ -1,3 +1,42 @@
 body {
-background-color:;
+	background-color:#EFEFEF;
+}
+
+ol {
+	font-size: 16px;
+	position: absolute;top: 0px;right: 120px;
+	list-style: none;
+}
+
+ol li {
+	padding-right: 23px;
+	float: left;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;	
+	color: #010101;
+}
+
+a:hover {
+	color: red;
+}
+p {
+	font-size: 47px;
+	text-align: center;
+}
+
+hr {
+	width:81%;
+}
+
+.footer {
+	width: 99%;
+	position: absolute; bottom: 0px;
+	height: 60px;
+	text-align: center;
 }

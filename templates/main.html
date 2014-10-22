@@ -5,7 +5,23 @@
     <title>{% block title %} {% end %}</title>
 </head>
 <body>
+<ol>
+<li><a href="/">what</a></li>
+<li><a href="#">about</a></li>
+<li><a href="/me">me</a></li>
+</ol>
+<p>{{ page_name }}</p>
+<hr>
+
 {% block body %} {% end %}
+
+<div class="footer">
+	<hr>
+	Copyright ©
+	<br>
+	Powerd By <a href="/me">yxc</a> 
+
+</div>
 <link rel="stylesheet" href="{{ static_url('css/style.css')}}" >
 </body>
 </html>

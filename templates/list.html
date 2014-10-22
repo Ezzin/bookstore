@@ -5,8 +5,31 @@
 
     {% block body %}
             <p>this is {{ book_name }}</p>
-        <form action="/list" method="post">
-            <input type="text" name="bookname">
+<table>
+       <form action="/list" method="post" class="listform">
+<tr>
+	<th>name</th>
+	<td><input type="text" name="book_name"></td>
+</tr>
+<tr>
+	<th>isbn</th>
+	<td> <input type="text" name="book_isbn"></td>
+</tr>
+<tr>
+	<th>author</th>
+	<td> <input type="text" name="book_author"></td>
+</tr>
+<tr>
+	<th>price</th>
+	<td> <input type="text" name="book_price"></td>
+</tr>
+           <tr><th></th><td>
             <input type="submit" value="确定">
-        </form>
+           </td></tr>
+           
+</form>
+    <form action="/book" method="get" class="listform">
+        <input type="submit" value="查询"></input>
+    </form></table>
+        <link rel="stylesheet" href="{{ static_url('css/list.css')}}" >
     {% end %}
